@@ -1,0 +1,1216 @@
+/**
+ * Theme Name:        Fabled Sunset
+ * Theme URI:         https://example.com/fabled-sunset
+ * Description:       Custom theme description...
+ * Version:           1.0.0
+ * Author:            Your Name
+ * Author URI:        https://example.com
+ * Tags:              block-patterns, full-site-editing
+ * Text Domain:       fabled-sunset
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+    
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+  
+}
+/*===========  MENU Wordpress ===========*/
+#menu-item-174 a{
+  color:#390606
+}
+.menu-item a{
+  padding: 18px 15px;
+  text-decoration: none;
+  color:black;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu li a:hover{
+  color: #390606;
+}
+
+.menu li{
+  position: relative;
+  transition: all 0.5s;
+}
+
+.menu li::after{
+content: '';
+height: 2px;
+width: 45%;
+background-color: #550b0b;
+position: absolute;
+opacity: 0;
+left: 20px;
+bottom: -8px;
+transition: all 0.2s;
+pointer-events: none;
+}
+.menu li:hover::after{
+  opacity: 1;
+}
+
+
+.sub-menu li::after{
+  content: '';
+  height: 0px;
+width: 0px;
+  
+  }
+ul.sub-menu{
+  list-style-type: none;
+  
+}
+
+/****================================****/
+
+
+.top-nav ,#top-nav{
+  display: block;
+  z-index: 999;
+  height: auto; 
+  top: 0;
+  width: 100%;
+  position: fixed;
+  transition: top 0.7s;
+  }
+  .top-nav{
+      
+      opacity: 0.9;
+      background-color: #b1b1b19d;
+     
+      left: 0;
+  }
+  .FireBrickRed {
+  background-color: #ffffff;
+  position: fixed;
+
+  }
+  
+.top-nav-bar{
+  
+  border-bottom:1px solid #676565;
+  
+}
+ 
+  .logo img{
+    padding-left: 25px;
+  }
+  ul.menu{
+    float: right;
+    display: flex;
+    padding: 15px;
+    list-style-type: none;
+    
+  }
+  .logo {
+    padding: 0;
+  }
+  .links{
+    padding: 10px;
+  }
+  
+  .links a{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    color: #272727;
+    
+  }
+.sub-menu{
+  display: none;
+  position: absolute;
+  background-color: #f2f1e6;
+  min-width: 160px;
+  box-shadow: 0px 3px 5px black;
+  border-radius: 5px;
+  margin-top: 12px;
+  z-index: 1;
+}
+.menu-item-172:hover .sub-menu {
+  display: block;
+  margin-left: 15px;
+padding: 0;
+}
+.menu-item-171:hover .sub-menu {
+  display: block;
+  width: 240px;
+  margin-left: 15px;
+padding: 0;
+}
+.sub-menu li{
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.sub-menu li:hover{
+  background-color: #f0e1c5;
+}
+.sub-menu li a {
+   padding: 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+
+}
+
+  
+  
+footer{
+  background-color: rgb(236, 231, 205);
+    margin-top: 50px;
+    color: black;
+}
+
+.colmn{
+  padding: 30px 20px;
+    height: 300px;
+}
+.colmn h3{
+  padding-bottom: 20px;
+  color: rgb(90, 23, 23);
+}
+.colmn p{
+  line-height: 20px;
+text-align: justify;
+}
+.policy{
+    margin-top: 10px;
+    padding: 0;
+    border-top: 1px solid black;
+}
+
+.colm{
+  padding: 20px 10px;
+    height: 60px;
+}
+.education a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+
+.list {
+  
+  list-style: none;
+}
+.list a{
+  color:black;
+  text-decoration: none;
+}
+.list a:hover{
+  color: rgb(96, 45, 8);
+}
+.counselling{
+  padding: 0;
+  line-height: 35px;
+}
+.edu {
+  display: flex;
+  float: right;
+}
+.edu li{
+  padding-right: 20px;
+}
+.edu a:hover{
+ color: rgb(137, 64, 22);
+ text-decoration: underline;
+
+}
+.edu-sys{
+  padding: 0;
+}
+.mySlides {display:none;}
+
+.mySlides {
+  position: relative;
+}
+.text{
+  top: 145px;
+  left: 20px;
+  right: 50%;
+  position: absolute;
+  color: white;
+}
+.text h4{
+  font-size: 26px;
+    color: rgb(57, 11, 11);
+    font-weight: bolder;
+}
+.text h1{
+  font-size: 3em;
+  padding: 7px 0px 20px 0px;
+}
+.text p{
+  font-size: 20px;
+line-height: 25px;
+}
+
+.background-img{
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+
+}
+
+.firt-page{
+background-image: url('assets/images/slide-3.png');
+}
+.second-page{
+  background-image:linear-gradient(to right, rgba(198, 198, 198, 0.249), rgba(0, 0, 0, 0.082)),url('assets/Slider-1.png');
+  
+}
+.third-page{
+  background-image:linear-gradient(to left, rgba(216, 210, 210, 0), rgba(0, 0, 0, 0.71)), url('assets/learners-classroom.jpg');
+}
+
+.fourth-page{
+  background-image: url('assets/images/Banners-01.png');
+}
+
+/***** about *******/
+.About{
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 90px;
+}
+
+.read-more{
+  background-color: rgb(182, 118, 39);
+  border-radius: 10px 10px 10px 0px;
+  height: 50px;
+  width: 150px;
+  border: none;
+
+}
+.read-more a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.read-more:hover{
+  background-color: rgb(121, 76, 18);
+  }
+  .read-more a:hover{
+    text-decoration: underline;
+  }
+.success-story h3{
+color: rgb(138, 73, 16);
+}
+.success-story p{
+  line-height: 25px;
+  color: rgb(162, 102, 50);
+  padding-bottom: 1em;
+}
+.success-story h2{
+  color: rgb(103, 45, 14);
+  font-size: 41px;
+  padding-bottom: 0.5em;
+}
+.success_story{
+  margin-bottom: 0px !important;
+}
+  .story{
+    height: 400px;
+    width: 60%;
+    border-radius: 55px 0px 55px 0px;
+  }
+  .picture{
+    position: relative;
+
+  }
+.academy-pic{
+  background-image: url(assets/images/academics.jpg);
+  background-size: cover;
+  position: relative;
+  top: 0;
+  z-index: -1;
+  left: 0;
+background-color: antiquewhite;
+}
+.learner{
+  z-index: -1;
+  border: 18px solid white;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  background-image: url(assets/images/admission.jpg);
+  top: 140px;
+  left: 234px;
+  background-color: aqua;
+}
+
+.alert {
+  text-align: center;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.error-page{
+  background-color:#390606; 
+  color: #FFF; 
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.error-container {
+  text-align: center;
+}
+
+.error-code {
+  font-size: 8em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error-message {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.home-link {
+  color: #884600; 
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 2px;
+}
+.profile{
+  height: 450px;
+}
+.pictre img {
+  height: 250px;
+  border-radius: 15px;
+  width: 50%;
+  float: right;
+  object-fit: cover;
+  
+}
+
+.description p{
+  color:white;
+  text-align: justify;
+padding: 80px 250px 10px 0px ;
+}
+
+.description h2{
+  padding: 10px 0px;
+}
+.conselling p{
+  z-index: -1;
+  position: relative;
+}
+.teachers{
+  z-index: -1;
+  padding-top: 40px;
+  color: white;
+  border-radius: 25px;
+  background-color: rgb(96, 45, 8);
+}
+.methodology img{
+  width: 80%;
+  height: auto;
+}
+.methodology-acadmy{
+  margin-top: 5em;
+}
+.why-abdul{
+  padding: 0px;
+  height: auto;
+}
+.rows-methodology{
+  display: grid; 
+  grid-template-columns: 30% 70%; 
+  grid-gap: 0px; 
+  
+}
+.content{
+  padding: 5px;
+}
+.content h3{
+  color: #550b0b;
+font-size: 18px;
+padding: 10px 0px 20px 0px;
+}
+.content p{
+  font-size: 14px;
+  line-height: 21px;
+  color: #807e7e;
+}
+.methodology{ 
+  box-sizing: border-box;
+}
+
+.discover{
+  text-align: center;
+
+}
+.discover h3{
+  color: rgb(162, 102, 50);
+}
+.discover h2{
+  color: rgb(103, 45, 14);
+  font-size: 41px;
+  padding-bottom: 0.5em;
+}
+.discover p{
+  padding: 0px 19em;
+  line-height: 25px;
+  color: rgb(162, 102, 50);
+  padding-bottom: 1em;
+}
+
+
+.carear-conelling{
+  margin-top: 50px;
+}
+.conselling h2{
+  color: rgb(103, 45, 14);
+  font-size: 30px;
+  padding-bottom: 0.5em;
+}
+.under-line{
+  height: 4px;
+  width: 70px;
+  background-color: rgb(162, 102, 50);
+}
+.conselling p{
+  font-size: 14px;
+  line-height: 21px;
+  color: #807e7e;
+  padding: 30px 10px 0px 0px;
+}
+.menu-bar{
+  padding: 25px 10px;
+}
+.menu-nav-bar label{
+  
+    display: none;
+    color:#550b0bc7;
+}
+.text a{
+  text-decoration: none;
+  color: white;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+  padding-top: 9px;
+	text-align:center;
+  font-size:39px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:1;
+}
+
+.my-float{
+	margin-top:16px;
+}
+ 
+  .contnt{
+
+       box-shadow: 2px 2px 3px black;
+    border-radius: 20px;
+    background-color: #dcdcdc;
+  }
+  @media only screen and (max-width: 1024px){
+  
+    *{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .learner{
+        left: 148px;
+    }
+    
+    .success-story h2 {
+      font-size: 30px;
+    }
+    .success-story h3{
+      font-size: 15px;
+
+    }
+    .story {
+      height: 300px;
+    }
+    
+    .success-story p {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .discover p {
+      padding: 0px 6em;
+    
+    }
+    .picture {
+      height: 440px
+    }
+    .About {
+      margin-bottom: 50px;
+    }
+    .conselling h2 {
+      font-size: 23px;
+    }
+    .conselling p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .methodology-acadmy {
+      margin-top: 3em;
+  }
+  .content p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .discover h2 {
+    font-size: 37px;
+  }
+  .content h3 {
+    font-size: 15px;
+  }
+  .colmn {
+    height: auto;
+  }
+  .edu li {
+    padding-right: 0px;
+}
+.colmn h3 {
+  font-size: 13px;
+  padding-bottom: 14px;
+}
+.colm i{
+  font-size: 15px;
+}
+
+
+.text h1 {
+  font-size: 2em;
+}
+.text h4 {
+  font-size: 23px;
+}
+text {
+  right: 35%;
+}
+.menu a {
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  font-size: 15px;
+}
+.menu-bar {
+  padding: 0px;
+}
+.description p {
+  font-size: 12px;
+  padding: 0px;
+}
+.col-5 {
+  width: 40%;
+}
+.col-7{
+ width: 60%;
+}
+.description p {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 70px 250px 5px 0px;
+}
+
+.closebtn{
+  line-height: 25px;
+}
+.profile {
+  height: 400px;
+}
+.menu a{
+  padding: 0px 10px;
+}
+.menu li::after{
+height: 0px;
+}
+
+.logo{
+padding: 4px;
+}
+.logo img{
+padding-left: 5px;
+}
+ul.menu{
+padding: 36px 10px;
+
+}
+
+}
+
+
+
+
+  @media only screen and (max-width: 768px){
+    
+
+
+
+
+
+    .menu-item-171:hover .sub-menu, .menu-item-172:hover .sub-menu  {
+     
+      position: fixed !important;
+      width: 223px !important;
+      margin-left: 4px !important;
+      padding: 0;
+  }
+
+    .menu a{
+      padding: 0px 10px;
+    }
+.menu li::after{
+height: 0px;
+}
+.menu a {
+  font-size: 13px;
+}
+
+.logo{
+  padding: 4px;
+}
+.logo img{
+  padding-left: 5px;
+}
+ul.menu{
+  padding: 26px 5px;
+}
+    .profile {
+      height: 360px;
+  }
+    
+    
+.col-5 {
+  width: 30%;
+}
+.col-7{
+ width: 70%;
+}
+.description p {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 60px 500px 5px 0px;
+}
+.description h2{
+  font-size: 20px;
+}
+.description h3{
+  font-size: 16px;
+}
+  }
+
+  @media only screen and (min-width: 617px)
+  {
+    .menu a{
+      font-size: 14px;
+    }
+  }
+  @media only screen and (min-width:601px) and (max-width: 767px){
+
+    .logo {
+    width: 20%;
+    }
+    .menu-bar{
+      width: 80%;
+    }
+    .fa-caret-down{
+      display: none;
+    }
+    .menu a{
+      padding: 0px 5px;
+    }
+    .text {
+      top: 120px;
+      right: 40%;
+    }
+    .About {
+      margin-bottom: 0px;
+  }
+  .col-6{
+    width: 50%;
+  }
+  .learner {
+    left: 132px;
+}
+.methodology img {
+float: right;
+  height: 75px;
+  object-fit: contain;
+    
+    
+  }
+  .education img{
+    width: 30%;
+  
+  }
+  .colmn {
+    padding: 10px 20px
+  }
+.colmn h3 {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.fa-solid{
+  font-size: 20px;
+}
+
+}
+#checkbox{
+  display: none;
+}
+#checkbox:checked ~ .menu-main-menu-container ul  {
+    left: 0%;
+  }
+
+
+  @media only screen and (max-width: 600px){
+   
+    .menu-main-menu-container ul {
+      position: fixed;
+    display: block;
+    background-color: aliceblue;
+    width: 100%;
+    transition: 0.7s;
+    z-index: 1;
+    padding: 0;
+    overflow: scroll;
+    left: 100%;
+      height: 70vh;
+    }
+    ul.sub-menu li{
+      padding: 5px;
+    }
+ul.sub-menu{
+  width: 50%;
+ 
+  height: auto !important;
+  display: none;
+}
+ul.sub-menu:hover{
+  display: block;
+}
+.menu li {
+  padding: 15px 10px;
+}
+.teachers{
+  z-index: -1;
+  position: relative;
+}
+    .fa-caret-down{
+      color: white;
+    }
+    .drop-down_link{
+      padding: 1.25rem 1.25rem 1.25rem 1.25rem !important;
+  
+ 
+    }
+    
+    .top-site-heading h2 {
+      font-size: 16px !important ;
+      padding-left: 17px !important;
+    }
+
+  .links a{
+    color: white;
+  }
+  
+  .burger{
+      display: block;
+    }
+    
+    .menu-nav-bar label{
+      float: right;
+        position: relative;
+        z-index: 3;
+      padding: 27px 16px;
+  display: block;
+    }
+    .burger{
+      text-align: center;
+      justify-content: center;
+    }
+    .burger i{
+      font-size: 29px;
+    }
+
+
+    .float{
+      bottom:18px;
+      right:15px;
+    }
+  .col-2{
+    width: 40%;
+  }
+  .col-10{
+    width: 60%;
+  }
+  
+  .text {
+    right: 10%;
+  }
+  .text h1 {
+    font-size: 26px;
+}
+.text p {
+  font-size: 16px;
+  line-height: 20px;
+}
+  
+
+
+  
+  .discover p{
+    padding: 0;
+  }
+  .colmn {
+    padding: 15px 20px
+  }
+  .counselling {
+    line-height: 25px;
+  }
+  .colmn img{
+    width: 45%;
+  }
+  .colm {
+    padding: 10px 10px;
+text-align: center;
+  }
+  .edu {
+      justify-content: center;
+    font-size: 15px;
+    float: none;
+  }
+  .edu li {
+    padding-right: 0 10px;
+}
+.col-5{
+  width: 100%;
+}
+.col-7{
+  width: 100%;
+}
+.profile {
+  height: auto;
+  text-align: center;
+}
+.description p {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0px 0px 5px 0px;
+}
+.learner {
+  left: 127px;
+}
+.pictre, .abdul-jabbar,.sir_taimoor {
+ height: 255px;
+ width: 100%;
+ margin: auto;
+ 
+  float: none;
+}
+.pictre img{
+  float: none;
+}
+.discover h2 {
+  font-size: 27px;
+}
+.discover h3 {
+  font-size: 17px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+
+
+  @media only screen and (max-width: 325px){
+    
+  .logo img{
+    padding-top: 4px;
+  }
+  .edu-sys{
+    font-size: 13px;
+  }
+  .edu a{
+    font-size: 12px;
+  }
+  .edu li {
+    padding-right: 0 0.1px ;
+}
+}
+
+
+/*****================= additional css ==============*********/
+html{
+  margin-top: 0px !important;
+}
+.top-heading{
+  background-color: #f3e8a9;
+    height: 300px;
+    padding: 192px 0px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.top-site-heading h2{
+  text-transform: uppercase;
+    font-size: 45px;
+    color:#550b0b;
+    padding-left: 30px;
+}
+.h2_before{
+  position: absolute;
+    z-index: 0;
+    height: 53px;
+    width: 7px;
+    background-color:#884600;
+    
+}
+.map iframe{
+  width: 100%;
+  height: 450px;
+}
+
+.vision-image, .corevalues-image, .mission-image{
+  background-color:#edcaa4;
+  color: #884600;
+  font-size: 50px;
+  margin-top: 35px;
+  text-align: center;
+  border-radius: 0px 15px 0px 15px;
+}
+.vision-mission{
+  border-radius: 40px;
+  padding: 30px 20px;
+  height: 220px;
+    background-color: white;
+    margin: 0px 0px 30px 0px;
+}
+.vision-mission:hover{
+    background-color:#681c1cf3;
+    color: white !important;
+}
+.vision-mission h4{
+    color: rgb(138, 73, 16);
+}
+.vision-mission p{
+  line-height: 25px;
+  color: rgb(162, 102, 50) ;
+  padding-bottom: 1em;
+}
+
+.mission:hover{
+  color: #c69765 !important;
+}
+
+.mission-sec{
+  margin-top: 40px;
+  padding: 20px 0px;
+  background-color: whitesmoke;
+}
+
+.phone, .E-mail{
+  margin-bottom: 10px;
+padding-top: 8%;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 0.1px 0.5px black;
+}
+
+.icon-phone, .icon-email, .location_icon {
+  font-size: 27px;
+    color: brown;
+}
+.phone h4, .E-mail h4, .location-addres h4  {
+  color: #884600;
+  padding: 25px;
+  font-size: 17px;
+    font-weight: 700;
+}
+.phone p, .E-mail p , .location-addres p {
+  color: #884600;
+padding: 0px 20px 10px 25px;
+}
+#wpforms-258-field_4{
+  height: 71px;
+}
+.E-mail a{
+  text-decoration: none;
+  color: black;
+}
+.contact-form h2{
+  color: #550b0b;
+padding: 14px 0px;
+}
+.contact-form {
+  padding: 0 15px;
+}
+.contact-form p{
+  color: #884600;
+}
+#wpforms-258-field_2{
+  height: 110px;
+}
+.top_position{
+  background-color: #e5cdb2;
+  border: 1px solid black;
+}
+.student_picture img{
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
+
+.testinomial_result{
+  height: auto;
+  display: flex;
+}
+.profile-pic img{
+  float: right;
+  height: 100px;
+    border-radius: 50%;
+    width: 100px;
+}
+.content-result {
+  padding: 20px 0;
+}
+.content-result p{
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: capitalize;
+  color:#884600;
+}
+.content-result h4{
+  padding: 5px 0;
+}
+.year{
+  text-align: center;
+}
+.result_section{
+  margin-top: 50px;
+}
+.year p{
+  font-weight: 800;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.content-result h3{
+  text-decoration: underline;
+    color: red;
+}
